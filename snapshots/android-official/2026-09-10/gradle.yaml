@@ -1,0 +1,17 @@
+name: Gradle
+version: "9.7.1"
+release_date: "2026-08-20"
+last_commit: "v9.7.1"
+official_status: stable
+important_features:
+  - Isolated Projects 从 experimental 升为 incubating（--isolated-projects）
+  - Configuration Cache：更高层依赖解析 API、Java agent + TestKit、减少 IDEA 误失效
+  - Resilient Sync：IDE import 失败时仍返回部分模型
+  - 问题源位置上限从 50 提升到 2050
+breaking_changes:
+  - 9.7.0 引入若干回归，官方明确建议直接上 9.7.1（BaseExecSpec streams、kapt antlr 泄漏、Option 注解参数顺序等）
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://docs.gradle.org/current/release-notes.html
+  - https://github.com/gradle/gradle/releases/tag/v9.7.1

@@ -1,0 +1,18 @@
+name: KSP
+version: "2.3.12"
+release_date: "2026-09-09"
+last_commit: "2.3.12"
+official_status: stable
+important_features:
+  - 支持 explicit backing fields（需处理器双重 opt-in）
+  - 修复 KMP KLib getDeclarationsFromPackage 不完整
+  - 修复 Android KMP 下 KSP 与 Lint 隐式任务依赖
+  - 版本线已从 `{kotlin}-{ksp}` 过渡到独立 2.3.x
+breaking_changes:
+  - 最低支持 AGP 升至 8.12.0
+  - 新语言特性默认关闭；处理器若只做一半 opt-in 会产生 undefined behavior
+deprecated_items:
+  - 直接实现旧 KSVisitor 而不迁移 KSVisitorNext（新特性路径）
+checked_at: "2026-09-10"
+source_urls:
+  - https://github.com/google/ksp/releases/tag/2.3.12

@@ -1,0 +1,18 @@
+name: Benchmark
+version: "1.5.0"
+release_date: "2026-09-09"
+last_commit: n/a
+official_status: stable
+important_features:
+  - Macrobenchmark 基于 UiAutomator 2.4（onElement DSL）
+  - androidx.benchmark.requireAot 默认 true（AGP 8.4+ 插件默认 AOT）
+  - Perfetto v56；进程内 trace 合并
+  - Baseline Profile Gradle Plugin 在 AGP 9.0 不再需要 newDsl=false
+  - ArtMetric 适配 AGP/R8 9.1+ / -repackageclasses
+breaking_changes:
+  - requireAot / 主线程 measureRepeated 更严格的默认值，可能让旧 benchmark 失败
+  - KMP baselineProfile 依赖必须走 extension 而非 dependencies 配置
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/jetpack/androidx/releases/benchmark

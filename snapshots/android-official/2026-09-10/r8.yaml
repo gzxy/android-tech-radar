@@ -1,0 +1,19 @@
+name: R8
+version: "bundled with AGP 9.4.0; R8Plugin incubating since 9.4.0-alpha07"
+release_date: "2026-09-01"
+last_commit: n/a
+official_status: stable (bundled) + incubating plugin
+important_features:
+  - AGP 9.0+ 默认 optimized resource shrinking
+  - AGP 9.4 新增 incubating com.android.build.gradle.R8Plugin / R8Extension
+  - 9.4.0-alpha03 修复 L8 obfuscation mapping 未写入 app mapping.txt
+  - 官方要求使用 proguard-android-optimize.txt；proguard-android.txt 因含 -dontoptimize 已被丢弃
+breaking_changes:
+  - getDefaultProguardFile("proguard-android.txt") 不再作为推荐路径
+deprecated_items:
+  - 关闭优化的默认 ProGuard 文件
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/topic/performance/app-optimization/enable-app-optimization
+  - https://developer.android.com/reference/tools/gradle-api/9.4/com/android/build/gradle/R8Plugin
+  - https://developer.android.com/build/releases/agp-9-4-0-release-notes

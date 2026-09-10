@@ -1,0 +1,18 @@
+name: Kotlin
+version: "2.4.20"
+release_date: "2026-09-07"
+last_commit: "v2.4.20"
+official_status: stable
+important_features:
+  - Tooling release（非语言大版本）；2.5.0 计划 2026-12
+  - when 表达式 invokedynamic（JVM 21+）升 Stable 并默认开启
+  - 实验性 coroutine stack trace recovery（StackTraceRecoverable）
+  - Gradle 兼容 7.6.3–9.7.0
+  - stdlib JVM 安全支持窗口：2.4 线至 2027-12-03
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://kotlinlang.org/docs/releases.html
+  - https://kotlinlang.org/docs/whatsnew2420.html
+  - https://github.com/JetBrains/kotlin/releases/tag/v2.4.20

@@ -1,0 +1,31 @@
+name: Android 17
+version: "API 37 / Android 17 Beta 4.1"
+release_date: "2026-06-01"
+last_commit: n/a
+official_status: beta
+important_features:
+  - 按设备 RAM 的 App memory limits；可用 am memory-limiter 测试
+  - Background audio hardening（target 37 更严：后台音频需 WIU FGS 或精确闹钟+USAGE_ALARM）
+  - ACCESS_LOCAL_NETWORK 运行时权限（NEARBY_DEVICES 组），target 37 强制
+  - ECH (Encrypted Client Hello) 默认启用
+  - Certificate Transparency 默认启用
+  - 更安全的 Native DCL：System.load() 的 so 必须只读
+  - 新 lock-free MessageQueue
+  - 跨 profile loopback 默认禁止
+breaking_changes:
+  - 后台音频 API 在非法生命周期静默失败 / AUDIOFOCUS_REQUEST_FAILED
+  - target 37 后大屏方向/比例限制不可再 opt-out
+  - static final 字段不可再通过反射/JNI 修改
+  - RemoteViews Bitmap+Icon 内存硬限制，超限直接杀进程
+  - Bluetooth RFCOMM InputStream.read() 在断开时返回 -1
+  - setContentCaptureEnabled(false) 对 target 37 失效，需改用 FLAG_SECURE
+deprecated_items:
+  - usesCleartextTraffic（未来版本废弃计划，迁移 Network Security Config）
+  - ContentCaptureManager.setContentCaptureEnabled
+  - MODE_BACKGROUND_ACTIVITY_START_ALLOWED（迁移到 ALLOW_IF_VISIBLE）
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/about/versions/17
+  - https://developer.android.com/about/versions/17/behavior-changes-all
+  - https://developer.android.com/about/versions/17/behavior-changes-17
+  - https://developer.android.com/latest-updates

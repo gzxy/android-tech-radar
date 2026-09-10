@@ -1,0 +1,19 @@
+name: Jetpack Compose
+version: "1.12.1 (ui) / Material3 1.4.0"
+release_date: "2026-09-09"
+last_commit: n/a
+official_status: stable
+important_features:
+  - Compose UI/Foundation/Runtime/Animation/Material 1.12.x 稳定线
+  - 1.12.0：可下载可变字体 + Google Fonts 零配置证书；Wide Color Gamut（API 29+）
+  - 1.12.1：2026-09-09 补丁
+  - Material3 1.4.0 稳定（2026-08-26）；1.5.0-alpha27
+  - Compiler 插件已并入 Kotlin compiler plugin（独立 compose.compiler 停留在 1.5.15 / 2024-08-07）
+breaking_changes: []
+deprecated_items:
+  - 独立 composeOptions.kotlinCompilerExtensionVersion 路径（应使用 Kotlin Compose compiler plugin）
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/jetpack/androidx/releases/compose
+  - https://developer.android.com/jetpack/androidx/releases/compose-ui
+  - https://developer.android.com/latest-updates

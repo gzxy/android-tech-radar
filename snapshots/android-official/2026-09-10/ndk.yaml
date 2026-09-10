@@ -1,0 +1,17 @@
+name: NDK
+version: "r30 LTS / 30.0.16248370"
+release_date: "2026-09-08"
+last_commit: "r30"
+official_status: stable LTS
+important_features:
+  - 新 LTS；LLVM/clang-r574158c
+  - 修复 LTO + 嵌套异常处理运行时 segfault（Issue 2073）
+  - 修复 ARM -O3 编译挂起（Issue 2215）
+  - 官方下载页 2026-09-08 更新
+  - AGP 9.4 默认仍钉在 NDK 28.2.13676358，需显式升级
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/ndk/downloads
+  - https://github.com/android/ndk/releases/tag/r30

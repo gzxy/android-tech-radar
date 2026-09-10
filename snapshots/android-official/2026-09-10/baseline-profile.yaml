@@ -1,0 +1,16 @@
+name: Baseline Profile
+version: "docs 2026-09-01; profileinstaller 1.4.1; recommended Macrobenchmark 1.4.1+ / 1.5.0"
+release_date: "2026-09-01"
+last_commit: n/a
+official_status: stable
+important_features:
+  - 官方仍声明约 30% 首启提升；建议同时使用 Baseline Profile + Startup Profile
+  - AGP 9.1：库模块也支持完整 source set 目录
+  - AGP 8.2+：R8 改写规则、Startup Profiles
+  - 文档推荐最低 Macrobenchmark 1.4.1、profileinstaller 1.4.1
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/topic/performance/baselineprofiles/overview
+  - https://developer.android.com/jetpack/androidx/releases/profileinstaller

@@ -1,0 +1,16 @@
+name: Google Play Target SDK
+version: "Target API 36 required (extension to 2026-11-01)"
+release_date: "2026-08-31 (enforcement) / docs 2026-09-01"
+last_commit: n/a
+official_status: enforced
+important_features:
+  - 2026-08-31 起新应用与更新必须 target Android 16 (API 36)
+  - Wear / Automotive 例外：target 35；Android TV / XR：target 34
+  - 已上架应用若 target <=34，对新用户在更高系统版本设备上将不可见
+  - 可申请延期至 2026-11-01
+breaking_changes:
+  - 未达 target 36 的更新无法提交 Play（主窗口已关闭）
+deprecated_items: []
+checked_at: "2026-09-10"
+source_urls:
+  - https://developer.android.com/google/play/requirements/target-sdk
