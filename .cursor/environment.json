@@ -1,0 +1,4 @@
+{
+  "name": "android-tech-radar",
+  "install": "python3 --version && chmod +x scripts/send-dingtalk.sh scripts/send_dingtalk.py"
+}
