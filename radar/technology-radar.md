@@ -1,8 +1,8 @@
 # Android Technology Radar
 
-Last updated: 2026-09-10  
-Source: `reports/weekly/android-technology-radar-2026-09-10.md`  
-Mode: first weekly baseline
+Last updated: 2026-09-11  
+Source: `reports/weekly/android-technology-radar-2026-09-11.md`  
+Mode: incremental vs `snapshots/weekly/2026-09-10.md`
 
 本文件是活文档。每周由 `automation/android-radar-weekly` 覆盖更新。没有版本、成熟度或推荐变化的条目，不重写解释。
 
@@ -17,9 +17,11 @@ Mode: first weekly baseline
 | Android Studio Quail 4 | 当前稳定 IDE；内置 Android skills | 2026-09-10 |
 | Configuration Cache | Isolated Projects 前置；40+ 模块仓非可选 | 2026-09-10 |
 | Baseline + Startup Profile CI | 用 `Require` 门禁，不要手养 profile | 2026-09-10 |
-| Android CLI + official skills | Agent 升 AGP / 迁 Nav3 的官方规程 | 2026-09-10 |
+| Android CLI + official skills | Agent 升 AGP / 迁 Nav3 / 写 AppFunction 的官方规程 | 2026-09-10 |
 | Studio AQI Crash/Leak Agent | 唯一官方、就地、人在回路的 Crash/Leak 闭环 | 2026-09-10 |
 | NDK r30 LTS | 有 native 时显式钉；AGP 默认仍是 28.2 | 2026-09-10 |
+| Dagger / Hilt KSP | 文档盖章稳定（Dagger 2.60+ / KSP 2.3.9+）；新模块禁止 kapt | 2026-09-11 |
+| compose-lints 1.6.0 | Slack 生产 Compose lint；不进 APK，直接接 CI | 2026-09-11 |
 
 ## Trial
 
@@ -34,9 +36,10 @@ Mode: first weekly baseline
 | Benchmark 1.5.0 | 重新校准启动/滚动基线 | `requireAot` 默认 true |
 | R8 analyzer + keepRules | 不打包就能迭代 keep | 随 AGP 9.3/9.4 |
 | Metro 1.0 | 编译税下降 50–80% 的报告 | 单 feature；Hilt 全家桶成本高 |
-| ADK Kotlin 1.0 | 官方 Android/KMP Agent 运行时 | 不要自研编排；不要双运行时 |
+| ADK Kotlin 1.0 | 官方 Android/KMP Agent 运行时；main 已超前 1.0.1 | 钉 1.0.1；等 1.0.2；不要自研编排 |
 | Maestro MCP | 唯一能留下确定性 CI 资产的 UI Agent | 与 Journeys 二选一 |
 | KuiklyUI 2.27 | Compose DSL + KSP；鸿蒙/跨端 | 仅有跨端 KPI 时嵌入，不整包替换 |
+| AppFunctions alpha10 | 官方端上 MCP；系统 Agent 调进 App | 只读函数；与 ADK 拆开；Gemini 仍 EAP |
 
 ## Assess
 
@@ -46,14 +49,14 @@ Mode: first weekly baseline
 |---|---|
 | Android 17 Beta | 内存限额、后台音频硬化；设备升级即生效 |
 | Navigation3 1.2.0-rc01 | 稳定线 1.1.7 已可给新屏幕；1.2 跟 RC |
-| KSP 2.3.12 | 自定义 processor / backing fields |
+| KSP 2.3.12 | 自定义 processor / backing fields（Hilt/Dagger 路径已 Adopt） |
 | AGP 10 plugin inventory | 现在列清单，避免发布窗口被插件卡住 |
 | KMP default module split | 仅已有或计划 KMP 的仓 |
-| Circuit 0.38 | Screen 不再 Parcelable；已用必须升级 |
+| Circuit 0.38 | Screen 不再 Parcelable；本周只是跟上 Compose 1.12.1 / Benchmark 1.5.0 |
 | Crashlytics MCP | Experimental；先值班机 |
 | GitHub Agentic Workflows | 编译/依赖红灯自愈，先单个仓库 |
-| Paparazzi 2.0-alpha05 | 组件库可 PoC；等稳定再全量 |
-| MNN 3.6.1 | 与 LiteRT-LM / ADK 对比，选一条主线 |
+| Paparazzi 2.0-alpha05 | a11y legend 更干净；等稳定再全量 |
+| MNN 3.6.1 | 跟 main 换去遥测脚本；TTS 另开；与 LiteRT-LM / ADK 选一条主线 |
 
 ## Hold
 
@@ -68,12 +71,13 @@ Mode: first weekly baseline
 | Tinker / Shadow / Atlas / AndFix / Robust | 热修复/插件化一代，不再是默认动态化 |
 | Flipper / AffectedModuleDetector / ByteX | archived 或 Transform API 遗产 |
 | ADK + MNN 双运行时 | 选一条主线 |
+| AppFunctions + ADK 同一里程碑 | 进程内 Agent 与系统级 Tool 是两条线 |
 
 ## Counts
 
 | Ring | Count |
 |---|---|
-| Adopt | 8 |
-| Trial | 10 |
+| Adopt | 10 |
+| Trial | 11 |
 | Assess | 10 |
-| Hold | 7 |
+| Hold | 8 |
