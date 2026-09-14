@@ -1,0 +1,21 @@
+name: Jetpack Compose
+version: "1.12.1 (ui) / Material3 1.4.0 / 1.5.0-alpha28"
+release_date: "2026-09-09"
+last_commit: n/a
+official_status: stable + alpha
+important_features:
+  - Compose UI/Foundation/Runtime/Animation/Material 1.12.1 稳定线未变
+  - Material3 稳定仍为 1.4.0；预览线从 1.5.0-alpha27 到 1.5.0-alpha28（2026-09-09）
+  - 1.5.0-alpha28：carousel 改为全局 carouselParallaxScrollEffect；Slider/RangeSlider 无状态 overload 废弃；SecureTextField 默认 obfuscation 改为 System
+  - Compiler 插件已并入 Kotlin compiler plugin（独立 compose.compiler 停留在 1.5.15 / 2024-08-07）
+breaking_changes:
+  - 仅 1.5 alpha：删除已废弃 ToggleButton overload；RangeSliderState 字段改名（startValue/endValue）
+deprecated_items:
+  - 独立 composeOptions.kotlinCompilerExtensionVersion 路径（应使用 Kotlin Compose compiler plugin）
+  - Material3 1.5 alpha：无状态 Slider / RangeSlider overload
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/jetpack/androidx/releases/compose
+  - https://developer.android.com/jetpack/androidx/releases/compose-ui
+  - https://developer.android.com/jetpack/androidx/releases/compose-material3
+  - https://developer.android.com/latest-updates

@@ -1,0 +1,18 @@
+name: Android Gradle Plugin 9.5 Preview
+version: "9.5.0-alpha05"
+release_date: "2026-09-10"
+last_commit: n/a
+official_status: alpha
+important_features:
+  - Google Maven 最新预览为 9.5.0-alpha05（metadata lastUpdated 2026-09-10T18:23:40Z）
+  - 与 Android Studio Rabbit 1 Canary 5 配对发布
+  - 稳定线仍是 AGP 9.4.0；官方 about-agp / 9.4 release notes 未改最低 Gradle 要求
+  - 官方尚未发布独立的 AGP 9.5 稳定版发行说明；9.5 目前只是 Canary 构建线
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-14"
+source_urls:
+  - https://androidstudio.googleblog.com/
+  - https://dl.google.com/android/maven2/com/android/tools/build/gradle/maven-metadata.xml
+  - https://developer.android.com/build/releases/about-agp
+  - https://developer.android.com/studio/preview

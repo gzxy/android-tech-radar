@@ -1,0 +1,23 @@
+name: Android 16
+version: "API 36 / Android 16"
+release_date: "2025-06-10"
+last_commit: n/a
+official_status: stable
+important_features:
+  - Edge-to-edge opt-out (windowOptOutEdgeToEdgeEnforcement) 在 target 36 且运行于 Android 16 时被禁用
+  - Predictive back 默认开启；onBackPressed / KEYCODE_BACK 不再分发，除非显式 opt-out
+  - 大屏 sw>=600dp 忽略方向/可调整大小/宽高比限制（target 36 可 opt-out，target 37 将不可 opt-out）
+  - elegantTextHeight 废弃并在 target 36 后被忽略
+  - scheduleAtFixedRate 错过的周期任务最多补跑一次
+breaking_changes:
+  - targetSdk 36 后无法再 opt-out edge-to-edge
+  - 未迁移 Predictive Back 的返回拦截会失效
+  - 大屏固定方向/比例限制被忽略，可能导致布局拉伸和状态丢失
+deprecated_items:
+  - R.attr.windowOptOutEdgeToEdgeEnforcement
+  - elegantTextHeight
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/about/versions/16
+  - https://developer.android.com/about/versions/16/behavior-changes-16
+  - https://developer.android.com/google/play/requirements/target-sdk
