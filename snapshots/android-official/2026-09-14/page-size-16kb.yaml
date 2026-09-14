@@ -1,0 +1,18 @@
+name: 16KB Page Size
+version: "Play enforcement 2027-02-01"
+release_date: "policy current as of 2026-09-10"
+last_commit: n/a
+official_status: enforced-upcoming
+important_features:
+  - Android 15+ AOSP 支持 16KB 设备
+  - 含 NDK / 第三方 so 的应用必须 16KB ELF 对齐，否则未来版本无法运行
+  - Play：target API 35+ 的 64-bit 应用更新，2027-02-01 起必须支持 16KB
+  - 官方给出启动时间平均 -3.16%、启动功耗 -4.56% 等收益
+breaking_changes:
+  - 未重编的 native 库在 16KB 设备上无法加载
+  - 2027-02-01 后不合规更新无法上架
+deprecated_items:
+  - 仅 4KB 对齐的预编译 so
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/guide/practices/page-sizes

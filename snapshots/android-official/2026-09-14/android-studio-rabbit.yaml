@@ -1,0 +1,18 @@
+name: Android Studio Rabbit 1
+version: "Rabbit 1 | 2026.2.1 Canary 5"
+release_date: "2026-09-10"
+last_commit: n/a
+official_status: canary
+important_features:
+  - 官方 latest-updates / preview 下载页当前 Canary 为 Rabbit 1 Canary 5（上一轮为 Canary 4）
+  - 配对 AGP 9.5.0-alpha05
+  - Canary 5 修复：Compose Preview（嵌套 PreviewParameterProvider、缩放误滚动、companion @Preview lint、冗余 action bar）、Gemini 本地 Agent 反馈按钮误发数据、fontScale 下拉值、Vector Asset Studio clip-art
+  - Rabbit 1 既有能力未变：Compose Preview Screenshot Testing、Play 测试轨上传、Gemini Enterprise、Model Assignment、Gradle 9.4+ 默认 IDEA parallel model fetching
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/studio/preview
+  - https://developer.android.com/studio/preview/features
+  - https://developer.android.com/latest-updates
+  - https://androidstudio.googleblog.com/

@@ -1,0 +1,19 @@
+name: Kotlin Coroutines
+version: "1.11.0"
+release_date: "2026-05-08"
+last_commit: "1.11.0"
+official_status: stable
+important_features:
+  - Kotlin 依赖升至 2.2.20
+  - CompletableDeferred.asDeferred、SharedFlow.asFlow、ReceiveChannel.consumeTo
+  - runBlocking / suspendCancellableCoroutine 增加 EXACTLY_ONCE contract
+breaking_changes:
+  - Promise 相关 API 迁到 web target；Wasm/JS 仅接受 JsAny 子类型
+  - JS/Wasm 无法传播的异常改为上报 JS runtime（不再只打日志）
+  - 禁止把 Job 传给 coroutine builder（lint deprecation）
+deprecated_items:
+  - 以 CoroutineDispatcher 作为 coroutine context key（改用 ContinuationInterceptor）
+  - kotlinx-coroutines-test 部分 API deprecation level 提升
+checked_at: "2026-09-14"
+source_urls:
+  - https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.11.0

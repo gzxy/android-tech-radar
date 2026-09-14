@@ -1,0 +1,27 @@
+name: Android Gradle Plugin
+version: "9.4.0"
+release_date: "2026-09-01"
+last_commit: n/a
+official_status: stable
+important_features:
+  - 最高支持 compile/target API 37
+  - 最低/默认 Gradle 9.6.0；Build Tools 36.0.0；默认 NDK 28.2.13676358；JDK 17
+  - android.newDsl.optOut 可按模块暂时退出 New Variant API（AGP 10 将删除）
+  - Dynamic Feature 与 App 的 flavor dimension 1:1 校验（默认 warning，android.enforceDynamicFeatureVariantMatching=true 可升为 error；AGP 10 默认强制）
+  - 官方路线图：AGP 10 删除 legacy Variant API / applicationVariants / Transform / android.newDsl / android.builtInKotlin opt-out
+  - 预览线存在 AGP 9.5.0-alpha05（Maven lastUpdated 2026-09-10；配对 Studio Rabbit 1 Canary 5），稳定线仍是 9.4.0
+breaking_changes:
+  - AGP 10 将强制 New Variant API，legacy applicationVariants.all 等将被删除
+  - Dynamic Feature variant 不匹配将在 AGP 10 变为 fatal
+deprecated_items:
+  - Legacy Variant API（applicationVariants / libraryVariants / testVariants）
+  - android.newDsl=false / android.builtInKotlin=false（AGP 10 移除）
+  - Transform API、registerJavaGeneratingTask、getCompileConfiguration 等
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/build/releases/agp-9-4-0-release-notes
+  - https://developer.android.com/build/releases/gradle-plugin-roadmap
+  - https://developer.android.com/build/releases/about-agp
+  - https://developer.android.com/studio/preview/features
+  - https://dl.google.com/android/maven2/com/android/tools/build/gradle/maven-metadata.xml
+  - https://androidstudio.googleblog.com/

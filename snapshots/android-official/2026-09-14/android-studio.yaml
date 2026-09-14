@@ -1,0 +1,26 @@
+name: Android Studio
+version: "Quail 4 | 2026.1.4"
+release_date: "2026-09-01"
+last_commit: n/a
+official_status: stable
+important_features:
+  - Quail 系列最终稳定版
+  - 内置 23 个 Android agent skills（含 AGP 9 Upgrade、Profiler、Navigation3、Adaptive）
+  - Gemma 4 本地模型一体化（可离线 agent）
+  - Parallel Agents UX：后台通知、Summary of Changes、可折叠思考过程
+  - Layout Inspector Recomposition state reads（需 compose.ui 1.10+ / BOM 2025.12.01+）
+  - Interactive Preview 预测返回手势模拟
+  - Firebase Agent Mode 全栈配置
+  - Cloud services 仅支持最近 10 个月的稳定大版本；Otter 2 Feature Drop 即将失去云服务
+breaking_changes:
+  - 时间窗口兼容策略：Studio 只保证支持过去 3 年发布的 AGP
+  - Quail 4 兼容 AGP 7.1-9.4
+deprecated_items:
+  - Android Studio Otter 2 Feature Drop 的 Cloud services 支持已 deprecated
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/studio/releases
+  - https://developer.android.com/studio/preview
+  - https://developer.android.com/studio/preview/features
+  - https://androidstudio.googleblog.com/
+  - https://developer.android.com/blog/posts/leverage-android-skills-and-gemma-4-in-android-studio-quail-4

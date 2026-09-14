@@ -1,0 +1,13 @@
+name: App Startup
+version: "1.2.0"
+release_date: "2024-09-18"
+last_commit: n/a
+official_status: stable
+important_features:
+  - 多进程 InitializationProvider
+  - 显式 ProfileInstaller 依赖以便 Baseline Profile 回退安装
+breaking_changes: []
+deprecated_items: []
+checked_at: "2026-09-14"
+source_urls:
+  - https://developer.android.com/jetpack/androidx/releases/startup
